@@ -43483,6 +43483,10 @@ module.exports = About;
 var React = require('react');
 
 var AuthorList = React.createClass({displayName: "AuthorList",
+	propTypes: {
+		authors: React.PropTypes.array.isRequired
+	},
+
 	render: function() {
 		var createRow = function(author){
 			return (
